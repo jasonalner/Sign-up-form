@@ -22,6 +22,7 @@ body {
 .intro {
     width: 50%;
 }
+
 h1 {
     color: #fff;
     font-size:40px;
@@ -31,6 +32,7 @@ h1 {
 .intro p {
     color: #fff;
 }
+
 .form form {
     display: flex;
     flex-direction: column;
@@ -41,20 +43,24 @@ h1 {
 
 }
 
-input {
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 55px;
-    margin:20px;
-    border: lightgrey 1px solid;
-    border-radius: 6px;
-    padding: 0 10px;
+    align-items: center;
+    width:100%;
+    margin: 10px 0;
+    border: lightgrey 2px solid;
+    border-radius: 5px;
 }
 
-input:focus {
-    border: red 1px solid;
-}
-
-input:active {
-    border: yellow 2px solid;
+input {
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    height:100%;
+    width: 100%;
+    background: transparent;
 }
 
 .try-free {
@@ -77,4 +83,17 @@ input:active {
     background:hsl(154, 59%, 51%);
     color: #fff;
     text-transform: uppercase;
+    height: 55px;
+}
+
+.error {
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    width:100%;
+    display:none ;
+}
+.error-img {
+    display: none;
+    padding-right: 10px;
 }
